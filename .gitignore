@@ -1,0 +1,112 @@
+node_modules
+backend/fir-transvahan-firebase-adminsdk-fbsvc-e54849a5ca.json
+backend/package-lock.json
+admin-portal/package-lock.json
+eta-service
+output.txt
+package-lock.json
+transvahan-user/package-lock.json
+cloud-chat
+docs
+transvahan-user/.expo   
+backend/seedRoutes.js
+infra/.terraform
+infra/.terraform.lock.hcl
+
+
+# 🔹 Node dependencies
+node_modules/
+**/node_modules/
+
+# 🔹 Build outputs (Vite, Expo, React)
+dist/
+build/
+web-build/
+android/
+ios/
+.expo/
+.expo-shared/
+.expo-dev/
+.expo-internal/
+
+# 🔹 Logs & debug
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+expo-debug.log
+firestore-debug.log
+
+# 🔹 Environment & secrets
+.env
+*.env.local
+*.env.development
+*.env.production
+*.env.test
+firebase-service-account.json
+serviceAccount*.json
+
+# 🔹 OS / Editor garbage
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# 🔹 Terraform / Cloud
+infra/.terraform/
+**/.terraform/
+*.tfstate
+*.tfstate.backup
+.terraform.lock.hcl
+
+# 🔹 Docker
+*.pid
+*.sock
+*.tar
+docker-compose.override.yml
+.env.docker
+
+# 🔹 Generated assets
+*.aab
+*.apk
+*.ipa
+
+# 🔹 Temporary / cache
+tmp/
+temp/
+.cache/
+coverage/
+.expo-cache/
+
+
+# Terraform junk
+infra/.terraform/
+**/.terraform/
+*.tfstate
+*.tfstate.backup
+.terraform.lock.hcl
+
+# Firebase / service accounts (very important)
+*firebase-adminsdk*.json
+serviceAccount*.json
+firebase-service-account.json
+
+# Env files
+.env
+*.env.local
+*.env.development
+*.env.production
+*.env.test
+
+# Node / Expo
+node_modules/
+**/node_modules/
+dist/
+build/
+web-build/
+.expo/
+.expo-shared/
+.expo-dev/
+.expo-internal/

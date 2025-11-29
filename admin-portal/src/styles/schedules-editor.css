@@ -1,0 +1,382 @@
+/* admin-portal/src/styles/schedules-editor.css */
+/* Modern Blue Theme for Schedules Editor */
+
+.schedules-editor {
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.se-header {
+  margin-bottom: 24px;
+}
+
+.se-header h1 {
+  margin: 0 0 8px 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: -0.5px;
+}
+
+.se-subtitle {
+  color: #64748b;
+  margin: 0;
+  font-size: 14px;
+}
+
+.se-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-end;
+  background: linear-gradient(180deg, #eff6ff 0%, #f8fafc 100%);
+  padding: 20px 24px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #bfdbfe;
+}
+
+.se-control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.se-control-group label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #1e40af;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.se-search {
+  padding: 10px 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 14px;
+  width: 180px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.se-search:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59,130,246,0.1);
+}
+
+.se-select {
+  padding: 10px 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 14px;
+  min-width: 200px;
+  background: white;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.se-select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59,130,246,0.1);
+}
+
+.se-direction-toggle {
+  display: flex;
+  border: 1px solid #bfdbfe;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #eff6ff;
+}
+
+.se-dir-btn {
+  padding: 10px 24px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  color: #3b82f6;
+}
+
+.se-dir-btn:first-child {
+  border-right: 1px solid #bfdbfe;
+}
+
+.se-dir-btn:hover {
+  background: #dbeafe;
+}
+
+.se-dir-btn.active {
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  color: white;
+  box-shadow: 0 2px 4px rgba(37,99,235,0.3);
+}
+
+.se-actions {
+  flex-direction: row;
+  align-items: center;
+  margin-left: auto;
+  gap: 10px;
+}
+
+.se-actions .btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.se-actions .btn.primary {
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  color: white;
+  box-shadow: 0 2px 4px rgba(37,99,235,0.2);
+}
+
+.se-actions .btn.primary:hover {
+  background: linear-gradient(135deg, #1d4ed8, #2563eb);
+  box-shadow: 0 4px 8px rgba(37,99,235,0.3);
+  transform: translateY(-1px);
+}
+
+.se-actions .btn.success {
+  background: linear-gradient(135deg, #10b981, #34d399);
+  color: white;
+  box-shadow: 0 2px 4px rgba(16,185,129,0.2);
+}
+
+.se-actions .btn.success:hover {
+  background: linear-gradient(135deg, #059669, #10b981);
+  box-shadow: 0 4px 8px rgba(16,185,129,0.3);
+  transform: translateY(-1px);
+}
+
+.se-actions .btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.se-unsaved-banner {
+  background: linear-gradient(135deg, #fef3c7, #fef9c3);
+  border: 1px solid #f59e0b;
+  color: #92400e;
+  padding: 12px 18px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(245,158,11,0.15);
+}
+
+.se-content {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(15,23,42,0.04), 0 4px 12px rgba(15,23,42,0.03);
+}
+
+.se-route-info {
+  padding: 18px 24px;
+  background: linear-gradient(180deg, #eff6ff 0%, #f8fafc 100%);
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.se-route-info h2 {
+  margin: 0 0 4px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1e40af;
+}
+
+.se-route-info p {
+  margin: 0;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.se-loading,
+.se-empty {
+  padding: 40px 20px;
+  text-align: center;
+  color: #64748b;
+}
+
+.se-empty p {
+  margin: 4px 0;
+}
+
+.se-schedule-list {
+  padding: 0;
+}
+
+.se-schedule-header {
+  display: grid;
+  grid-template-columns: 120px 30px 120px 1fr 100px;
+  gap: 12px;
+  padding: 14px 24px;
+  background: linear-gradient(180deg, #eff6ff, #dbeafe);
+  border-bottom: 1px solid #bfdbfe;
+  font-size: 12px;
+  font-weight: 600;
+  color: #1e40af;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.se-schedule-row {
+  display: grid;
+  grid-template-columns: 120px 30px 120px 1fr 100px;
+  gap: 12px;
+  padding: 14px 24px;
+  border-bottom: 1px solid #f1f5f9;
+  align-items: center;
+  transition: background 0.15s ease;
+}
+
+.se-schedule-row:last-child {
+  border-bottom: none;
+}
+
+.se-schedule-row:hover {
+  background: #f0f9ff;
+}
+
+.se-time-input {
+  padding: 10px 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 14px;
+  width: 100%;
+  font-family: monospace;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.se-time-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59,130,246,0.1);
+}
+
+.se-arrow {
+  color: #3b82f6;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.se-name-input {
+  padding: 10px 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 14px;
+  width: 100%;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.se-name-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59,130,246,0.1);
+}
+
+.se-row-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.se-row-actions .btn {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.se-row-actions .btn.xs {
+  padding: 6px 12px;
+  font-size: 11px;
+}
+
+.se-row-actions .btn.danger {
+  background: linear-gradient(135deg, #fee2e2, #fecaca);
+  color: #dc2626;
+  border: 1px solid #fca5a5;
+}
+
+.se-row-actions .btn.danger:hover {
+  background: linear-gradient(135deg, #fecaca, #fca5a5);
+  box-shadow: 0 2px 6px rgba(220,38,38,0.2);
+}
+
+.se-footer {
+  margin-top: 20px;
+  padding: 18px 24px;
+  background: linear-gradient(180deg, #f0f9ff 0%, #f8fafc 100%);
+  border-radius: 10px;
+  border: 1px solid #bfdbfe;
+}
+
+.se-hint {
+  margin: 0;
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .se-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .se-actions {
+    margin-left: 0;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .se-schedule-header,
+  .se-schedule-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .se-schedule-header {
+    display: none;
+  }
+
+  .se-schedule-row {
+    padding: 16px 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .se-time-input {
+    width: 120px;
+  }
+
+  .se-name-input {
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .se-arrow {
+    width: auto;
+  }
+
+  .se-row-actions {
+    width: 100%;
+    margin-top: 8px;
+  }
+}
