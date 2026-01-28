@@ -16,7 +16,6 @@
 | **K Bhargav Sashank** | bhargavsk@iisc.ac.in |
 | **Y Ratna Sai Aakanksha** | aakankshay@iisc.ac.in |
 | **JS Vishnu Teja** | vishnutejas@iisc.ac.in |
-| **Kunjan Manoj Kumar S** | manojkumark@iisc.ac.in |
 
 **Acknowledgement:**
 This project involved the extensive use of AI agents and coding assistants (such as Claude Opus 4.5, ChatGPT CodeX 5.1 max, Gemini 3 Pro, etc.) for generating boilerplate code, debugging assistance, and clarifying complex API/Cloud configuration steps.
