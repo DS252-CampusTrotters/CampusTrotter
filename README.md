@@ -1,4 +1,4 @@
- # TransVahan — Smart CampusTrotter
+ # CampusTrotter
  
  **CampusTrotter** is a full-stack, real-time campus shuttle platform connecting **Users**, **Drivers**, and **Administrators**.  
  It provides live shuttle tracking, route editing, occupancy analytics, and predictive ETAs — built using Node.js, React, React Native, Firebase, AWS, and Terraform.
